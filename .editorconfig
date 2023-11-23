@@ -1,0 +1,30 @@
+# Editor configuration, see http://editorconfig.org
+# indent_style	tab 또는 space 설정
+# indent_size	들여쓰기 수준에 사용되는 너비의 size 설정
+# end_of_line	개행 표시 방법 제어 (lf, cr, crlf)
+# charset	인코딩 설정
+# trim_trailing_whitespace	newline 앞의 공백 문자를 제거하려면 true로 그렇지 않으면 false로 설정
+# insert_final_newline	저장 시 파일 마지막 line을 줄바꿈 처리 하려면 true로 그렇지 않으면 false로 설정
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+indent_style = tab
+indent_size = 2
+trim_trailing_whitespace = true
+
+[*.{js,css,html}]
+charset = utf-8
+
+[*.py]
+indent_style = tab
+indent_size = 4
+
+[lib/**.js]
+indent_style = tab
+indent_size = 2
+
+[Makefile]
+indent_style = tab
